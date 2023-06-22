@@ -33,6 +33,6 @@
         }
     }
     spl_autoload_register('autoload');
-    areas::getInstance();
+    areas::getInstance(json_decode(file_get_contents("php://input"), true))->getAreas();
     /* client::getInstance(json_decode(file_get_contents("php://input"), true))->getAllClient(); */
 ?>
