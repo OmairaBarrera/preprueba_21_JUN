@@ -1,5 +1,20 @@
 <?php
-    interface environments{
+    class connect{
+        private $conx;
+        function __construct(){
+            try {
+                $this->conx = new PDO("mysql:host=172.16.48.204;port=3306;database=campusland;user=sputnik;password=Sp3tn1kC@");
+                echo "ok";
+            } catch (\Throwable $th) {
+                echo "Error";
+            }
+        }
+    }
+    
+    $obj = new Connect();
+
+
+    /* interface environments{
         public function __get($name);
     }
     abstract class connect extends credentials implements environments{
@@ -13,5 +28,5 @@
                 $this->conx = $e->getMessage();
             }
         }
-    }
+    } */
 ?>
