@@ -1,0 +1,22 @@
+{
+    "name": "spukm01-074/preprueba_21_jun",
+    "description": "...",
+    "license": "LTS",
+    "autoload": {
+        "psr-4": {
+            "App\\": [
+                "./scripts",
+                "./scripts/db",
+                "./scripts/areas",
+                "./scripts/seller"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "OmairaBarrera",
+            "email": "lomaira.barrera@gmail.com"
+        }
+    ],
+    "require": {}
+}

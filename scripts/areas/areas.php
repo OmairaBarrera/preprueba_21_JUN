@@ -1,4 +1,5 @@
 <?php
+    namespace App;
     class areas extends connect{
         private $queryGet = 'SELECT id AS "Identificador", name_area AS "Nombres_Areas" FROM areas';
         private $queryDelete = 'DELETE FROM areas WHERE id= :Identificador';
